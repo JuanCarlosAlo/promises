@@ -40,3 +40,11 @@ button.addEventListener('click', () => {
 });
 
 printText();
+
+const fetschData = async url => {
+  const request = await fetch(url);
+  const data = await response.json();
+  console.log(data);
+};
+
+fetschData('jsonplaceholder.typicode.com/users');
